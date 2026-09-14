@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Social Meta Tags -->
+  <title>Jaydip & Viral | Forever Starts Here - Our Engagement Story</title>
+  <meta name="description" content="A digital engagement celebration album & cinematic love story of Jaydip & Viral. Explore sacred vidhi rituals, morning moments, ring exchange, and joyous celebrations.">
+  <meta name="keywords" content="engagement celebration, couple love story, engagement photography album, Jaydip and Viral, vidhi ceremony">
+  <meta name="theme-color" content="#FAF6F0">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Swiper.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       23. PAGE LOADING ANIMATION
+       ========================================================================== -->
+  <div id="preloader">
+    <div class="loader-content">
+      <div class="loader-heart-wrapper">
+        <div class="loader-ring-pulse"></div>
+        <i class="fa-solid fa-heart loader-heart"></i>
+      </div>
+      <h2 class="loader-title font-serif">Jaydip & Viral</h2>
+      <p class="loader-subtitle">Our Engagement Story</p>
+      <div class="loader-progress-bar">
+        <div class="loader-progress-fill"></div>
+      </div>
+      <span class="loader-status">Gathering sweet memories...</span>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       22. FLOATING PETALS & SPARKLES CANVAS
+       ========================================================================== -->
+  <canvas id="ambientCanvas"></canvas>
+
+  <!-- ==========================================================================
+       19. FLOATING NAVIGATION BAR & 24. MUSIC CONTROLLER
+       ========================================================================== -->
+  <header class="floating-navbar">
+    <a href="#hero" class="nav-brand">
+      <span class="monogram">J & V</span>
+      <i class="fa-solid fa-heart nav-heart"></i>
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#couple" class="nav-link">Our Story</a></li>
+        <li><a href="#story" class="nav-link">Timeline</a></li>
+        <li><a href="#morning" class="nav-link">Morning</a></li>
+        <li><a href="#vidhi" class="nav-link">Vidhi</a></li>
+        <li><a href="#afternoon" class="nav-link">Afternoon</a></li>
+        <li><a href="#engagement" class="nav-link">Engagement</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#celebration" class="nav-link">Blessings</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <!-- 24. Music Controller Button -->
+      <button id="musicToggleBtn" class="music-toggle-btn" title="Toggle romantic soundtrack" aria-label="Toggle ambient romantic music">
+        <div class="sound-waves">
+          <span class="wave-bar"></span>
+          <span class="wave-bar"></span>
+          <span class="wave-bar"></span>
+          <span class="wave-bar"></span>
+        </div>
+        <span class="btn-text">Play Music</span>
+      </button>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobileNavToggle" class="mobile-nav-toggle" aria-label="Toggle mobile navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Offcanvas Drawer -->
+  <div id="mobileNavDrawer" class="mobile-nav-drawer">
+    <div>
+      <div class="nav-brand" style="margin-bottom: 2rem;">
+        <span class="monogram">Jaydip & Viral</span>
+        <i class="fa-solid fa-heart nav-heart"></i>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#hero" class="mobile-nav-link">Home <i class="fa-solid fa-angle-right"></i></a></li>
+        <li><a href="#couple" class="mobile-nav-link">Our Story <i class="fa-solid fa-angle-right"></i></a></li>
+        <li><a href="#story" class="mobile-nav-link">Timeline <i class="fa-solid fa-angle-right"></i></a></li>
+        <li><a href="#morning" class="mobile-nav-link">Morning Memories <i class="fa-solid fa-angle-right"></i></a></li>
+        <li><a href="#vidhi" class="mobile-nav-link">Sacred Vidhi <i class="fa-solid fa-angle-right"></i></a></li>
+        <li><a href="#afternoon" class="mobile-nav-link">Afternoon Vibes <i class="fa-solid fa-angle-right"></i></a></li>
+        <li><a href="#engagement" class="mobile-nav-link">The Big Moment <i class="fa-solid fa-angle-right"></i></a></li>
+        <li><a href="#gallery" class="mobile-nav-link">Full Album <i class="fa-solid fa-angle-right"></i></a></li>
+        <li><a href="#celebration" class="mobile-nav-link">Blessings <i class="fa-solid fa-angle-right"></i></a></li>
+      </ul>
+    </div>
+    <div class="mobile-drawer-footer">
+      <p class="font-script" style="font-size: 1.4rem; color: var(--c-rose-deep);">Forever & Always 💍</p>
+      <p>Jaydip & Viral Engagement</p>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         4. HERO SECTION
+         ========================================================================== -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-wrapper">
+        <img src="images/hero/hero-main.jpg" alt="Jaydip and Viral Engagement Celebration" class="hero-bg-img">
+        <div class="hero-overlay"></div>
+        <div class="hero-vignette"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-tag">
+          <i class="fa-solid fa-ring hero-ring-icon"></i>
+          <span>Our Engagement Story</span>
+        </div>
+
+        <p class="hero-pretitle">Two hearts, one beautiful beginning.</p>
+        <h1 class="hero-names">
+          Jaydip <span class="ampersand">&</span> Viral
+        </h1>
+
+        <p class="hero-tagline">Forever starts here ❤️</p>
+
+        <div class="hero-date-badge">
+          <i class="fa-regular fa-calendar-check"></i>
+          <span>Sunday, December 14, 2024</span>
+        </div>
+      </div>
+
+      <a href="#couple" class="hero-scroll-indicator" aria-label="Scroll to explore">
+        <div class="scroll-mouse-pill">
+          <div class="scroll-dot"></div>
+        </div>
+        <span>Scroll to explore ↓</span>
+      </a>
+    </section>
+
+    <!-- ==========================================================================
+         5. COUPLE INTRODUCTION SECTION
+         ========================================================================== -->
+    <section id="couple" class="couple-intro-section section-padding">
+      <div class="bg-ambient-orb orb-peach" style="top: 10%; left: -100px;"></div>
+      <div class="bg-ambient-orb orb-rose" style="bottom: 5%; right: -120px;"></div>
+
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">A New Chapter</span>
+          <h2 class="section-title">A New Chapter Begins</h2>
+          <p class="section-subtitle">
+            Two souls destined to meet, two lives weaving into a tapestry of endless love.
+          </p>
+          <div class="title-ornament"><i class="fa-solid fa-heart"></i></div>
+        </div>
+
+        <div class="couple-cards-wrapper">
+          <!-- Bride Card -->
+          <div class="couple-card">
+            <div class="couple-photo-arch">
+              <img src="images/hero/bride.jpg" alt="Viral - The Bride" loading="lazy">
+            </div>
+            <span class="couple-role">The Bride</span>
+            <h3 class="couple-name">Viral</h3>
+            <p class="couple-bio">"The radiant smile that brought warmth, laughter, and an eternity of happiness into my life."</p>
+          </div>
+
+          <!-- Central Pulsing Heart Connector -->
+          <div class="couple-connector">
+            <svg class="connecting-line" height="2" viewBox="0 0 320 2">
+              <line x1="0" y1="1" x2="320" y2="1" stroke="url(#lineGoldGrad)" stroke-width="2" stroke-dasharray="6,6" />
+              <defs>
+                <linearGradient id="lineGoldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#FFB5A0" />
+                  <stop offset="50%" stop-color="#D4AF37" />
+                  <stop offset="100%" stop-color="#F47C88" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="connector-heart-badge">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <span class="connector-text">Bound by Love</span>
+          </div>
+
+          <!-- Groom Card -->
+          <div class="couple-card">
+            <div class="couple-photo-arch">
+              <img src="images/hero/groom.jpg" alt="Jaydip - The Groom" loading="lazy">
+            </div>
+            <span class="couple-role">The Groom</span>
+            <h3 class="couple-name">Jaydip Chavda</h3>
+            <p class="couple-bio">"Her anchor, her protector, and the one whose laughter makes every storm feel gentle."</p>
+          </div>
+        </div>
+
+        <!-- Romantic Connecting Paragraph -->
+        <div class="couple-story-paragraph">
+          Two different journeys, two beautiful hearts, and one unforgettable moment that brought us closer forever. From our first conversation under the twilight stars to holding hands on this sacred day, every second has been a blessing.
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. ENGAGEMENT TIMELINE / STORY SECTION
+         ========================================================================== -->
+    <section id="story" class="timeline-section section-padding">
+      <div class="bg-ambient-orb orb-gold" style="top: 20%; right: -80px;"></div>
+
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag gold">Our Journey of the Day</span>
+          <h2 class="section-title">The Celebration Timeline</h2>
+          <p class="section-subtitle">
+            From the serene morning prayer to dancing under the starlit sky, here is how our unforgettable day unfolded.
+          </p>
+          <div class="title-ornament"><i class="fa-solid fa-gem"></i></div>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-track">
+            <div class="timeline-progress"></div>
+          </div>
+
+          <!-- Timeline Item 1: Morning -->
+          <div class="timeline-item timeline-item-odd">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <span class="timeline-time">08:30 AM • Morning</span>
+              <h3 class="timeline-title">Morning Awakening & Preparations</h3>
+              <p class="timeline-desc">The air was filled with sweet jasmine fragrances and warm sunbeams as family gathered with eager smiles and blessing prayers.</p>
+              <div class="timeline-thumb" data-lightbox-index="0">
+                <img src="images/morning/morning-01.jpg" alt="Morning preparations" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Vidhi -->
+          <div class="timeline-item timeline-item-even">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <span class="timeline-time">10:45 AM • Sacred Rituals</span>
+              <h3 class="timeline-title">The Sacred Vidhi Ceremony</h3>
+              <p class="timeline-desc">Chanting sacred Vedic mantras, lighting the holy diya, and seeking the heartfelt blessings of elders in reverence.</p>
+              <div class="timeline-thumb" data-lightbox-index="3">
+                <img src="images/vidhi/vidhi-01.jpg" alt="Sacred Vidhi Ceremony" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: Afternoon -->
+          <div class="timeline-item timeline-item-odd">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <span class="timeline-time">01:30 PM • Joy & Feast</span>
+              <h3 class="timeline-title">Afternoon Joy & Cheerful Vibes</h3>
+              <p class="timeline-desc">Laughter echoed across the floral canopy as friends and cousins shared stories, sweets, and celebratory music.</p>
+              <div class="timeline-thumb" data-lightbox-index="6">
+                <img src="images/afternoon/afternoon-01.jpg" alt="Afternoon celebration vibes" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4: Engagement Ceremony -->
+          <div class="timeline-item timeline-item-even">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <span class="timeline-time">05:00 PM • The Highlight</span>
+              <h3 class="timeline-title">The Grand Ring Exchange</h3>
+              <p class="timeline-desc">Surrounded by golden fairy lights and beating hearts, we made the eternal promise and exchanged our rings.</p>
+              <div class="timeline-thumb" data-lightbox-index="8">
+                <img src="images/engagement/engagement-01.jpg" alt="Grand Ring Exchange" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 5: Outdoor Memories -->
+          <div class="timeline-item timeline-item-odd">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <span class="timeline-time">06:30 PM • Sunset Romance</span>
+              <h3 class="timeline-title">Golden Hour Stroll & Candid Smiles</h3>
+              <p class="timeline-desc">Stepping out into the gentle twilight breeze to embrace quiet moments together as an engaged couple.</p>
+              <div class="timeline-thumb" data-lightbox-index="14">
+                <img src="images/outdoor/outdoor-01.jpg" alt="Golden hour outdoor stroll" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. MORNING MEMORIES SECTION
+         ========================================================================== -->
+    <section id="morning" class="morning-section section-padding">
+      <div class="bg-ambient-orb orb-peach" style="top: 25%; left: -60px;"></div>
+
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Morning Memories</span>
+          <h2 class="section-title">A Beautiful Morning</h2>
+          <p class="section-subtitle">
+            The day began with smiles, happiness and beautiful moments.
+          </p>
+          <div class="title-ornament"><i class="fa-solid fa-sun"></i></div>
+        </div>
+
+        <div class="masonry-gallery">
+          <!-- Morning Photo 1 (Featured) -->
+          <div class="masonry-item col-8 tall" data-lightbox-index="0">
+            <div class="masonry-img-wrapper">
+              <img src="images/morning/morning-01.jpg" alt="Morning preparation and floral jewelry" loading="lazy">
+              <div class="gallery-hover-overlay">
+                <div class="overlay-heart-btn"><i class="fa-solid fa-heart"></i></div>
+                <span class="overlay-tag">Morning • 08:30 AM</span>
+                <h3 class="overlay-title">Adorned in Fragrant Blossoms</h3>
+                <p class="overlay-caption">The gentle ritual of weaving fresh jasmine strings and floral ornaments into Viral's hair.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Morning Photo 2 -->
+          <div class="masonry-item col-4" data-lightbox-index="1">
+            <div class="masonry-img-wrapper">
+              <img src="images/morning/morning-02.jpg" alt="Viral - The Bride" loading="lazy">
+              <div class="gallery-hover-overlay">
+                <div class="overlay-heart-btn"><i class="fa-solid fa-heart"></i></div>
+                <span class="overlay-tag">The Bride</span>
+                <h3 class="overlay-title">A Heart Full of Anticipation</h3>
+                <p class="overlay-caption">Golden morning rays reflecting in Viral’s sparkling eyes.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Morning Photo 3 -->
+          <div class="masonry-item col-4" data-lightbox-index="2">
+            <div class="masonry-img-wrapper">
+              <img src="images/morning/morning-03.jpg" alt="Jaydip - The Groom" loading="lazy">
+              <div class="gallery-hover-overlay">
+                <div class="overlay-heart-btn"><i class="fa-solid fa-heart"></i></div>
+                <span class="overlay-tag">The Groom</span>
+                <h3 class="overlay-title">Ready for Forever</h3>
+                <p class="overlay-caption">Jaydip styled in traditional cream and gold embroidery.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. VIDHI CEREMONY SECTION (SACRED MOMENTS)
+         ========================================================================== -->
+    <section id="vidhi" class="vidhi-section section-padding">
+      <div class="vidhi-ornamental-border"></div>
+      <div class="bg-ambient-orb orb-gold" style="bottom: 10%; right: 10%;"></div>
+
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="section-header">
+          <span class="section-tag gold">Tradition & Reverence</span>
+          <h2 class="section-title">The Sacred Moments</h2>
+          <p class="section-subtitle">
+            A beautiful beginning filled with traditions, blessings and love.
+          </p>
+          <div class="title-ornament"><i class="fa-solid fa-om"></i></div>
+        </div>
+
+        <div class="vidhi-grid">
+          <!-- Large Featured Sacred Image -->
+          <div class="vidhi-spotlight-card" data-lightbox-index="3">
+            <div class="vidhi-spotlight-img">
+              <img src="images/vidhi/vidhi-01.jpg" alt="Vidhi Pooja Ceremony with sacred flame" loading="lazy">
+            </div>
+            <div class="vidhi-spotlight-info">
+              <div>
+                <h3 class="font-serif" style="font-size: 1.6rem; color: var(--c-text-main);">The Sacred Vidhi Pooja</h3>
+                <p style="font-size: 0.95rem; color: var(--c-text-muted);">Surrounded by marigold garlands, coconut kalash, and ancestral blessings.</p>
+              </div>
+              <span class="section-tag gold" style="margin: 0;">Sacred</span>
+            </div>
+          </div>
+
+          <!-- Polaroid-style surrounding cards -->
+          <div class="vidhi-cards-stack">
+            <div class="polaroid-card" data-lightbox-index="4">
+              <div class="polaroid-photo">
+                <img src="images/vidhi/vidhi-02.jpg" alt="Elders blessing the couple" loading="lazy">
+              </div>
+              <p class="polaroid-caption">Sacred Prayers & Hand in Hand</p>
+            </div>
+
+            <div class="polaroid-card" data-lightbox-index="5">
+              <div class="polaroid-photo">
+                <img src="images/vidhi/vidhi-03.jpg" alt="Brass diya lamp and pooja thali" loading="lazy">
+              </div>
+              <p class="polaroid-caption">Auspicious Deepak & Joyful Smiles</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. AFTERNOON MEMORIES SECTION
+         ========================================================================== -->
+    <section id="afternoon" class="afternoon-section section-padding">
+      <div class="sunbeam-glow"></div>
+      <div class="bg-ambient-orb orb-lavender" style="top: 30%; left: -80px;"></div>
+
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Afternoon Joy</span>
+          <h2 class="section-title">Afternoon Vibes</h2>
+          <p class="section-subtitle">
+            Smiles, laughter and unforgettable moments.
+          </p>
+          <div class="title-ornament"><i class="fa-solid fa-champagne-glasses"></i></div>
+        </div>
+
+        <div class="magazine-grid">
+          <div class="magazine-card featured" data-lightbox-index="6">
+            <img src="images/afternoon/afternoon-01.jpg" alt="Afternoon celebration under floral canopy" loading="lazy">
+            <div class="gallery-hover-overlay">
+              <div class="overlay-heart-btn"><i class="fa-solid fa-heart"></i></div>
+              <span class="overlay-tag">Celebration</span>
+              <h3 class="overlay-title">Shared Laughter Under Flowers</h3>
+              <p class="overlay-caption">Surrounded by dear friends and family showering cheers and good wishes.</p>
+            </div>
+          </div>
+
+          <div class="magazine-card secondary" data-lightbox-index="7">
+            <img src="images/afternoon/afternoon-02.jpg" alt="Joyful family cheers" loading="lazy">
+            <div class="gallery-hover-overlay">
+              <div class="overlay-heart-btn"><i class="fa-solid fa-heart"></i></div>
+              <span class="overlay-tag">Family Love</span>
+              <h3 class="overlay-title">Cherished Smiles</h3>
+              <p class="overlay-caption">Warm hugs, blessings, and lively chatter in the afternoon sun.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         10. ENGAGEMENT CEREMONY SECTION (THE HIGHLIGHT SWIPER SLIDER)
+         ========================================================================== -->
+    <section id="engagement" class="engagement-section">
+      <div class="engagement-ambient-glow"></div>
+
+      <div class="container">
+        <div class="engagement-header">
+          <span class="section-tag" style="background: rgba(212, 175, 55, 0.2); color: var(--c-gold-light); border-color: rgba(212, 175, 55, 0.4);">
+            The Grand Milestone
+          </span>
+          <h2 class="section-title">The Moment We Said Yes ❤️</h2>
+          <p class="section-subtitle">
+            A promise. A ring. A lifetime together.
+          </p>
+          <div class="title-ornament" style="color: var(--c-gold-light);"><i class="fa-solid fa-ring"></i></div>
+        </div>
+
+        <!-- Full-Width Swiper Slider -->
+        <div class="swiper engagementSwiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide engagement-slide" data-lightbox-index="8">
+              <div class="slide-img-wrapper">
+                <img src="images/engagement/engagement-01.jpg" alt="The Moment We Said Yes">
+                <div class="slide-caption-bar">
+                  <div class="slide-caption-text">
+                    <h4>The Eternal Beginning</h4>
+                    <p>The stage bathed in warm fairy lights as we held hands and looked into our future.</p>
+                  </div>
+                  <div class="slide-heart-pill">
+                    <i class="fa-solid fa-heart"></i> She Said Yes!
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide engagement-slide" data-lightbox-index="9">
+              <div class="slide-img-wrapper">
+                <img src="images/engagement/sparkling-ring.jpg" alt="The Diamond Engagement Ring">
+                <div class="slide-caption-bar">
+                  <div class="slide-caption-text">
+                    <h4>The Solitaire Promise</h4>
+                    <p>Cradled in soft blush petals, shimmering with a lifetime of love and trust.</p>
+                  </div>
+                  <div class="slide-heart-pill">
+                    <i class="fa-solid fa-gem"></i> Pure Diamond
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide engagement-slide" data-lightbox-index="10">
+              <div class="slide-img-wrapper">
+                <img src="images/engagement/engagement-03.jpg" alt="Walking together as an engaged couple">
+                <div class="slide-caption-bar">
+                  <div class="slide-caption-text">
+                    <h4>Step By Step, Hand in Hand</h4>
+                    <p>Our hearts beat as one as everyone cheered with standing ovations and flowers.</p>
+                  </div>
+                  <div class="slide-heart-pill">
+                    <i class="fa-solid fa-star"></i> Starlit Celebration
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Swiper Controls -->
+          <div class="swiper-button-prev" aria-label="Previous Slide"></div>
+          <div class="swiper-button-next" aria-label="Next Slide"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         11. RING EXCHANGE SECTION
+         ========================================================================== -->
+    <section class="ring-exchange-section">
+      <div class="container">
+        <div class="ring-card-3d">
+          <div class="ring-visual-col">
+            <div class="ring-image-frame" data-lightbox-index="9">
+              <img src="images/engagement/sparkling-ring.jpg" alt="Diamond Ring on Blush Rose Petals" loading="lazy">
+              <div class="ring-sparkle-emblem">
+                <i class="fa-solid fa-gem"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="ring-text-col">
+            <span class="section-tag gold" style="margin-bottom: 1rem;">Eternal Vow</span>
+            <h2 class="ring-vow-quote font-serif">
+              <span>One ring.</span>
+              <span class="gold-text">One promise.</span>
+              <span>One forever.</span>
+            </h2>
+            <p class="ring-story-desc">
+              "When I slipped this ring onto your finger, it was not just a symbol of our engagement, but a quiet oath before God and our families that I will love, protect, and cherish you through every dawn and dusk."
+            </p>
+            <div class="ring-seal-signature">
+              <i class="fa-solid fa-certificate seal-icon"></i>
+              <span class="seal-text">Jaydip & Viral</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         12. COUPLE PHOTO GALLERY ("JUST US ❤️")
+         ========================================================================== -->
+    <section class="couple-gallery-section section-padding">
+      <div class="bg-ambient-orb orb-peach" style="bottom: 10%; right: -50px;"></div>
+
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Pure Romance</span>
+          <h2 class="section-title">Just Us ❤️</h2>
+          <p class="section-subtitle">
+            Unscripted laughter, gentle whispers, and moments when the whole world stood still.
+          </p>
+          <div class="title-ornament"><i class="fa-solid fa-heart"></i></div>
+        </div>
+
+        <div class="tilted-polaroid-grid">
+          <!-- Polaroid 1 -->
+          <div class="tilted-card" data-lightbox-index="11">
+            <div class="washi-tape"></div>
+            <div class="tilted-card-img">
+              <img src="images/couple/couple-01.jpg" alt="Jaydip and Viral holding hands warmly" loading="lazy">
+            </div>
+            <p class="tilted-card-caption">In Your Eyes, My Forever</p>
+          </div>
+
+          <!-- Polaroid 2 -->
+          <div class="tilted-card" data-lightbox-index="12">
+            <div class="washi-tape"></div>
+            <div class="tilted-card-img">
+              <img src="images/couple/couple-02.jpg" alt="Viral blushing with joy" loading="lazy">
+            </div>
+            <p class="tilted-card-caption">Her Irresistible Smile</p>
+          </div>
+
+          <!-- Polaroid 3 -->
+          <div class="tilted-card" data-lightbox-index="13">
+            <div class="washi-tape"></div>
+            <div class="tilted-card-img">
+              <img src="images/couple/couple-03.jpg" alt="Jaydip looking at his bride" loading="lazy">
+            </div>
+            <p class="tilted-card-caption">A Promise Kept True</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         13. OUTDOOR / GOING OUT MEMORIES (HORIZONTAL SCROLL)
+         ========================================================================== -->
+    <section class="outdoor-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag gold">Beyond The Stage</span>
+          <h2 class="section-title">After The Celebration</h2>
+          <p class="section-subtitle">
+            The memories continued beyond the celebration... walking together into the sunset.
+          </p>
+          <div class="title-ornament"><i class="fa-solid fa-tree"></i></div>
+        </div>
+      </div>
+
+      <div class="outdoor-horizontal-wrapper">
+        <div class="outdoor-track">
+          <!-- Outdoor Card 1 -->
+          <div class="outdoor-card" data-lightbox-index="14">
+            <img src="images/outdoor/outdoor-01.jpg" alt="Golden hour stroll in botanical garden" loading="lazy">
+            <div class="gallery-hover-overlay">
+              <div class="overlay-heart-btn"><i class="fa-solid fa-heart"></i></div>
+              <span class="overlay-tag">Golden Hour</span>
+              <h3 class="overlay-title">Sun-Kissed Steps</h3>
+              <p class="overlay-caption">Walking through sweet blossoms under the amber sunset glow.</p>
+            </div>
+          </div>
+
+          <!-- Outdoor Card 2 -->
+          <div class="outdoor-card" data-lightbox-index="15">
+            <img src="images/outdoor/outdoor-02.jpg" alt="Candid laughter outdoor" loading="lazy">
+            <div class="gallery-hover-overlay">
+              <div class="overlay-heart-btn"><i class="fa-solid fa-heart"></i></div>
+              <span class="overlay-tag">Candid Love</span>
+              <h3 class="overlay-title">Sweet Whispers</h3>
+              <p class="overlay-caption">When laughter feels like the sweetest melody.</p>
+            </div>
+          </div>
+
+          <!-- Outdoor Card 3 -->
+          <div class="outdoor-card" data-lightbox-index="16">
+            <img src="images/outdoor/outdoor-03.jpg" alt="Twilight garden romance" loading="lazy">
+            <div class="gallery-hover-overlay">
+              <div class="overlay-heart-btn"><i class="fa-solid fa-heart"></i></div>
+              <span class="overlay-tag">Sunset Magic</span>
+              <h3 class="overlay-title">Forever Under This Sky</h3>
+              <p class="overlay-caption">Counting our blessings as the evening stars began to shine.</p>
+            </div>
+          </div>
+
+          <!-- Outdoor Card 4 (Re-featured full romance) -->
+          <div class="outdoor-card" data-lightbox-index="8">
+            <img src="images/engagement/engagement-01.jpg" alt="Stage lights and holding hands" loading="lazy">
+            <div class="gallery-hover-overlay">
+              <div class="overlay-heart-btn"><i class="fa-solid fa-heart"></i></div>
+              <span class="overlay-tag">Unforgettable</span>
+              <h3 class="overlay-title">Two Hearts As One</h3>
+              <p class="overlay-caption">The sweetest beginning of our grand adventure.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         14. FULL PHOTO ALBUM SECTION
+         ========================================================================== -->
+    <section id="gallery" class="album-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Complete Album</span>
+          <h2 class="section-title">Our Beautiful Memories</h2>
+          <p class="section-subtitle">
+            Every smile, ritual, and loving glance captured forever. Filter by moments.
+          </p>
+          <div class="title-ornament"><i class="fa-solid fa-images"></i></div>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="album-filter-tabs">
+          <button class="filter-btn active" data-filter="all">All Photos</button>
+          <button class="filter-btn" data-filter="morning">Morning</button>
+          <button class="filter-btn" data-filter="vidhi">Vidhi Ceremony</button>
+          <button class="filter-btn" data-filter="afternoon">Afternoon</button>
+          <button class="filter-btn" data-filter="engagement">Engagement</button>
+          <button class="filter-btn" data-filter="couple">Couple</button>
+          <button class="filter-btn" data-filter="outdoor">Outdoor</button>
+        </div>
+
+        <!-- Filterable Grid (Data-driven by JavaScript) -->
+        <div id="albumGrid" class="album-grid">
+          <!-- Populated dynamically by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         15. CINEMATIC MEMORY PARALLAX SECTION
+         ========================================================================== -->
+    <section class="cinematic-quote-section">
+      <img src="images/hero/hero-main.jpg" alt="Cinematic Memory Backdrop" class="cinematic-bg">
+      <div class="cinematic-overlay"></div>
+
+      <div class="cinematic-quote-content">
+        <div class="cinematic-sparkle">
+          <i class="fa-solid fa-sparkles"></i>
+        </div>
+        <h2 class="cinematic-main-quote">
+          Some moments become memories.<br>
+          Some memories become forever.
+        </h2>
+        <p class="cinematic-subquote">
+          — Jaydip & Viral
+        </p>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         16. LOVE QUOTE SECTION
+         ========================================================================== -->
+    <section class="quotes-section section-padding">
+      <div class="bg-ambient-orb orb-rose" style="top: 20%; right: -50px;"></div>
+
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Words of the Heart</span>
+          <h2 class="section-title">Whispers of Love</h2>
+          <p class="section-subtitle">
+            Timeless verses that mirror our shared journey.
+          </p>
+          <div class="title-ornament"><i class="fa-solid fa-quote-right"></i></div>
+        </div>
+
+        <div class="quotes-grid">
+          <div class="quote-card">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="quote-text">
+              "Every love story is beautiful, but ours is my favorite."
+            </p>
+            <span class="quote-author">With all my love</span>
+          </div>
+
+          <div class="quote-card">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="quote-text">
+              "Together is our favorite place to be, today, tomorrow, and every tomorrow after."
+            </p>
+            <span class="quote-author">Forever & Always</span>
+          </div>
+
+          <div class="quote-card">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="quote-text">
+              "Forever looks beautiful with you, like a sunrise that never fades."
+            </p>
+            <span class="quote-author">Eternal Vow</span>
+          </div>
+
+          <div class="quote-card">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="quote-text">
+              "And suddenly, all the love songs on the radio were written about you."
+            </p>
+            <span class="quote-author">Our Symphony</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         17. FINAL CELEBRATION SECTION
+         ========================================================================== -->
+    <section id="celebration" class="celebration-section">
+      <div class="bg-ambient-orb orb-gold" style="top: 20%; left: 10%;"></div>
+      <div class="bg-ambient-orb orb-peach" style="bottom: 10%; right: 10%;"></div>
+
+      <div class="container" style="position: relative; z-index: 5;">
+        <div class="celebration-couple-frame">
+          <img src="images/hero/hero-main.jpg" alt="Jaydip and Viral - Engaged with Love">
+          <div class="celebration-ring-badge">💍</div>
+        </div>
+
+        <span class="section-tag gold" style="margin-bottom: 1rem;">Engaged With Love</span>
+        <h2 class="celebration-title">Forever Begins Here ❤️</h2>
+        <p class="celebration-desc">
+          Thank you for being a part of our beautiful journey and showering us with your warmth, blessings, and cherished presence.
+        </p>
+
+        <div class="celebration-actions">
+          <button id="celebrateBtn" class="celebrate-btn" aria-label="Send love and blessings to the couple">
+            <i class="fa-solid fa-heart"></i> Send Love & Blessings
+          </button>
+          <div class="blessings-counter">
+            <i class="fa-solid fa-sparkles" style="color: var(--c-gold);"></i>
+            <span>Warm Blessings: <span id="blessingsCount" class="count-num">524</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       18. ROMANTIC FOOTER
+       ========================================================================== -->
+  <footer class="romantic-footer">
+    <div class="container">
+      <div class="footer-monogram font-serif">Jaydip & Viral</div>
+      <p class="footer-tagline font-script">Forever & Always 💍</p>
+      <div class="footer-divider"></div>
+      <p class="footer-copy">
+        Made with ❤️ for our special memories • Celebrated on December 14, 2024
+      </p>
+      <a href="#hero" class="footer-back-to-top" aria-label="Scroll back to top">
+        <i class="fa-solid fa-arrow-up"></i> Back to Top
+      </a>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       25. FULL PHOTO LIGHTBOX MODAL
+       ========================================================================== -->
+  <div id="lightboxModal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Photo Lightbox">
+    <button id="lightboxCloseBtn" class="lightbox-close-btn" aria-label="Close Lightbox">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <button id="lightboxPrevBtn" class="lightbox-nav-btn lightbox-prev-btn" aria-label="Previous Photo">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button id="lightboxNextBtn" class="lightbox-nav-btn lightbox-next-btn" aria-label="Next Photo">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+    <div class="lightbox-content-box">
+      <div class="lightbox-img-container">
+        <img id="lightboxImg" src="" alt="Engagement Celebration Photo">
+      </div>
+      <div class="lightbox-details">
+        <div id="lightboxCounter" class="lightbox-counter">01 / 17</div>
+        <h3 id="lightboxTitle" class="lightbox-title">Photo Title</h3>
+        <p id="lightboxCaption" class="lightbox-caption">Photo caption description</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CDN Script Dependencies -->
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  
+  <!-- Swiper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  
+  <!-- Custom Script -->
+  <script src="js/script.js"></script>
+</body>
+</html>
